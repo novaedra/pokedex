@@ -5,7 +5,8 @@ export default function OutlinedCard(pokemon) {
 
     return (
             <div className={'card'}>
-                <h2  className={'pokemonName'}>{pokemon.name}</h2>
+                <h2  className={'pokemonName'}>{pokemon.nameFR}</h2>
+                <p>{pokemon.name}</p>
                 <p>{pokemon.height} cm</p>
                 <div  className={'types'}>
                     {pokemon.types.map((type) => {
